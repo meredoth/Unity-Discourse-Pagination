@@ -18,4 +18,4 @@ DISCLAIMER:
 
 I created this extension for fun and have no particular interest in pagination functionality for Unity's Discourse forum. Therefore, I probably won't be updating or changing this extension.
 
-Feel free to use the provided JavaScript file as a starting point. If you want different buttons, buttons in a different location on the screen, different CSS, and so on, you can customize it as needed.
+Feel free to use the provided JavaScript file as a starting point. If you want different buttons, buttons in a different location on the screen, different CSS, and so on, I am not going to do it, you can customize it as needed.

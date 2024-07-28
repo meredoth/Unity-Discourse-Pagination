@@ -15,7 +15,7 @@
 // along with this program.If not, see < http://www.gnu.org/licenses/>.
 
 const postsPerPage = 20;
-const paginationStyle = "display:flex; justify-content:center; flex-direction:column; padding-top:2rem";
+const paginationStyle = "display:flex; justify-content:center; flex-direction:column; padding-top:5rem";
 const buttonStyle = "width:2rem; height:2rem; margin: 0.2rem;";
 
 function getCurrentURL() {
@@ -85,15 +85,14 @@ function createPagination(numberOfPosts, url){
             button.style.visibility = 'visible';
         });
 
-        switch(getCurrentPage()){
-            case 1:
-                firstButton.style.visibility = 'hidden';
-                prevButton.style.visibility = 'hidden';
-                break;
-            case getNumPages():
-                lastButton.style.visibility = 'hidden';
-                nextButton.style.visibility = 'hidden';
-                break;
+        if(getCurrentPage() == 1) {
+            firstButton.style.visibility = 'hidden';
+            prevButton.style.visibility = 'hidden';
+        }
+
+        if (getCurrentPage() == getNumPages()) {
+            lastButton.style.visibility = 'hidden';
+            nextButton.style.visibility = 'hidden';
         }
   
         let oldPagination = document.getElementById('pagination')
